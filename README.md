@@ -40,13 +40,6 @@ git clone https://github.com/yourusername/nexusshop.git
 cd nexusshop
 ```
 
-Or extract the downloaded archive:
-
-```bash
-tar -xzf ecommerce-nexusshop-final.tar.gz
-cd ecommerce
-```
-
 ---
 
 ### 2. Set Up MongoDB Atlas
@@ -806,7 +799,7 @@ The combination of three purpose-built NoSQL databases, each solving the part of
 ## Project Structure
 
 ```
-ecommerce/
+nexusshop/
 │
 ├── backend/                        Node.js + Express API
 │   ├── config/
