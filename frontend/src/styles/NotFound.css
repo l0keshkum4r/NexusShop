@@ -1,0 +1,60 @@
+.notfound-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 30%, rgba(124,106,247,0.08) 0%, transparent 60%);
+}
+
+.notfound-inner {
+  position: relative;
+  max-width: 480px;
+}
+
+.notfound-code {
+  font-size: clamp(100px, 20vw, 160px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -6px;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--border-light);
+  position: relative;
+  z-index: 1;
+}
+
+.notfound-orb {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.15;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.notfound-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.notfound-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.notfound-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

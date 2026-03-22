@@ -1,0 +1,140 @@
+version: '3.9'
+
+# ─────────────────────────────────────────────────────────────────────────────
+# NexusShop — Full local dev stack
+#
+# Usage:
+#   docker-compose up --build          # start everything
+#   docker-compose up backend ml       # start specific services
+#   docker-compose down -v             # stop and remove volumes
+#
+# Notes:
+#   - MongoDB, Neo4j, Redis run locally in containers.
+#   - Set MONGODB_ATLAS_URI etc. in .env to use cloud services instead.
+#   - Frontend is NOT containerized here; run `npm start` separately.
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── MongoDB ────────────────────────────────────────────────────────────────
+  mongo:
+    image: mongo:7.0
+    container_name: nexusshop_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: ecommerce
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Neo4j ──────────────────────────────────────────────────────────────────
+  neo4j:
+    image: neo4j:5.15-community
+    container_name: nexusshop_neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"   # Browser UI
+      - "7687:7687"   # Bolt protocol
+    environment:
+      NEO4J_AUTH: neo4j/password123
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_memory_heap_initial__size: 256m
+      NEO4J_dbms_memory_heap_max__size: 512m
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:7474"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+
+  # ── Redis ──────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7.2-alpine
+    container_name: nexusshop_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass redispassword
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "redispassword", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── ML Service ─────────────────────────────────────────────────────────────
+  ml:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: nexusshop_ml
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      MONGODB_URI: mongodb://admin:password@mongo:27017/ecommerce?authSource=admin
+    depends_on:
+      mongo:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  # ── Backend ────────────────────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: nexusshop_backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: development
+      PORT: 5000
+      MONGODB_URI: mongodb://admin:password@mongo:27017/ecommerce?authSource=admin
+      NEO4J_URI: bolt://neo4j:7687
+      NEO4J_USERNAME: neo4j
+      NEO4J_PASSWORD: password123
+      REDIS_URL: redis://:redispassword@redis:6379
+      JWT_SECRET: local_dev_jwt_secret_change_in_production
+      JWT_EXPIRES_IN: 7d
+      ML_SERVICE_URL: http://ml:8000
+      FRONTEND_URL: http://localhost:3000
+      CACHE_TTL: 3600
+      TRENDING_TTL: 300
+    depends_on:
+      mongo:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      ml:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mongo_data:
+  neo4j_data:
+  redis_data:
+
+networks:
+  default:
+    name: nexusshop_network
