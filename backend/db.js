@@ -8,9 +8,6 @@ const connectMongoDB = async () => {
       serverSelectionTimeoutMS: 5000,
     });
     console.log(`✅ MongoDB connected: ${conn.connection.host}`);
-
-    // Create indexes after connection
-    await createIndexes();
   } catch (error) {
     console.error("❌ MongoDB connection error:", error.message);
     process.exit(1);
