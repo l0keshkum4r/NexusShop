@@ -20,7 +20,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Apple",
     stock: 20,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/iphone15pro/400/300",
+    thumbnail:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=400&hei=300&fmt=jpeg&qlt=90",
     stats: { views: 3100, purchases: 210, cartAdds: 480 },
   },
   {
@@ -35,7 +36,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Samsung",
     stock: 18,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/s24ultra/400/300",
+    thumbnail:
+      "https://images.samsung.com/us/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-titaniumblack-400-400.jpg",
     stats: { views: 2800, purchases: 165, cartAdds: 390 },
   },
   {
@@ -47,7 +49,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["smartphone", "google", "android", "pixel", "ai", "camera"],
     brand: "Google",
     stock: 25,
-    thumbnail: "https://picsum.photos/seed/pixel8pro/400/300",
+    thumbnail:
+      "https://lh3.googleusercontent.com/fife/ALs6j_GXtBWz-ks_GW-k0_o5Yp7p4CqF9E5q8H0p5Jq9V2bC7E2oL6E2oL6E2oL=s400",
     stats: { views: 1450, purchases: 98, cartAdds: 210 },
   },
   {
@@ -61,7 +64,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["smartphone", "oneplus", "android", "5g", "fast-charging"],
     brand: "OnePlus",
     stock: 30,
-    thumbnail: "https://picsum.photos/seed/oneplus12/400/300",
+    thumbnail:
+      "https://image01.oneplus.net/ebp/202312/05/1-m00-52-45-rb8bw2vpukeaflp0aaibfkefbwq832.png",
     stats: { views: 1100, purchases: 88, cartAdds: 195 },
   },
   // Electronics — Audio
@@ -77,7 +81,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Sony",
     stock: 45,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/headphones/400/300",
+    thumbnail:
+      "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=400&bgcolor=FFFFFF&bgc=FFFFFF",
     stats: { views: 1520, purchases: 89, cartAdds: 210 },
   },
   {
@@ -90,7 +95,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Apple",
     stock: 60,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/airpodspro/400/300",
+    thumbnail:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=400&hei=300&fmt=jpeg&qlt=90",
     stats: { views: 2900, purchases: 345, cartAdds: 610 },
   },
   {
@@ -104,7 +110,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["speaker", "bluetooth", "jbl", "waterproof", "portable"],
     brand: "JBL",
     stock: 55,
-    thumbnail: "https://picsum.photos/seed/jblcharge/400/300",
+    thumbnail:
+      "https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw0e4a0014/JBL_CHARGE5_HERO_002_BLKBLU_0059.png?sw=400&sh=300&sm=fit",
     stats: { views: 980, purchases: 210, cartAdds: 340 },
   },
   {
@@ -118,7 +125,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["headphones", "bose", "noise-canceling", "wireless", "premium"],
     brand: "Bose",
     stock: 35,
-    thumbnail: "https://picsum.photos/seed/boseqc45/400/300",
+    thumbnail:
+      "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/quietcomfort45/product_silo_images/QC45_HP_BLK_hero.jpg/jcr:content/renditions/cq5dam.web.400.400.jpeg",
     stats: { views: 1240, purchases: 120, cartAdds: 265 },
   },
   // Electronics — Computers
@@ -132,7 +140,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Apple",
     stock: 30,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/macbook/400/300",
+    thumbnail:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=400&hei=300&fmt=jpeg&qlt=90",
     stats: { views: 2310, purchases: 145, cartAdds: 380 },
   },
   {
@@ -146,7 +155,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["laptop", "dell", "xps", "oled", "i9", "gaming", "premium"],
     brand: "Dell",
     stock: 15,
-    thumbnail: "https://picsum.photos/seed/dellxps/400/300",
+    thumbnail:
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/silver/notebook-xps-15-9530-t-silver-gallery-4.psd?fmt=jpg&wid=400&hei=300",
     stats: { views: 1670, purchases: 72, cartAdds: 198 },
   },
   {
@@ -158,7 +168,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["tablet", "apple", "ipad", "m2", "portable"],
     brand: "Apple",
     stock: 22,
-    thumbnail: "https://picsum.photos/seed/ipad/400/300",
+    thumbnail:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-13-select-wifi-spacegray-202210?wid=400&hei=300&fmt=jpeg&qlt=90",
     stats: { views: 1750, purchases: 98, cartAdds: 220 },
   },
   {
@@ -170,7 +181,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["mouse", "wireless", "logitech", "productivity", "ergonomic"],
     brand: "Logitech",
     stock: 80,
-    thumbnail: "https://picsum.photos/seed/mouse/400/300",
+    thumbnail:
+      "https://resource.logitech.com/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-top-view-graphite.png?v=1&imgwidth=400",
     stats: { views: 760, purchases: 210, cartAdds: 340 },
   },
   {
@@ -183,7 +195,7 @@ const SAMPLE_PRODUCTS = [
     brand: "DJI",
     stock: 20,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/drone/400/300",
+    thumbnail: "https://store.dji.com/cdn/dji-mini-3-pro/mini-3-pro-hero.jpg",
     stats: { views: 1100, purchases: 55, cartAdds: 130 },
   },
   {
@@ -197,7 +209,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["tv", "samsung", "oled", "4k", "smart-tv"],
     brand: "Samsung",
     stock: 15,
-    thumbnail: "https://picsum.photos/seed/tv/400/300",
+    thumbnail:
+      "https://images.samsung.com/us/televisions-home-theater/tvs/oled-tvs/all-oled-tvs/QN55S95CAFXZA/gallery/QN55S95CAFXZA-Front_Black.jpg",
     stats: { views: 980, purchases: 42, cartAdds: 95 },
   },
   // Clothing
@@ -213,7 +226,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Nike",
     stock: 60,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/nike/400/300",
+    thumbnail:
+      "https://static.nike.com/a/images/c_limit,w_400,f_auto/t_product_v1/b-w-i-e-b-e-l-a-b-e-l-a/AH8050-002/air-max-270-mens-shoes-kWQEkE.jpg",
     stats: { views: 2100, purchases: 320, cartAdds: 560 },
   },
   {
@@ -225,7 +239,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["shoes", "adidas", "running", "boost", "sneakers"],
     brand: "Adidas",
     stock: 55,
-    thumbnail: "https://picsum.photos/seed/adidas/400/300",
+    thumbnail:
+      "https://assets.adidas.com/images/h_400,f_auto,q_auto,fl_lossy,c_fill,g_auto/a68929c6a22b45deaff8ad9b0115e63e_9366/Ultraboost_Light_Running_Shoes_Black_HQ6339_01_standard.jpg",
     stats: { views: 1450, purchases: 210, cartAdds: 380 },
   },
   {
@@ -237,7 +252,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["jeans", "levis", "denim", "casual", "straight-fit"],
     brand: "Levi's",
     stock: 100,
-    thumbnail: "https://picsum.photos/seed/jeans/400/300",
+    thumbnail:
+      "https://lsco.scene7.com/is/image/lsco/005010194-front-pdp?fmt=jpeg&qlt=70&resMode=sharp2&op_usm=0.6,0.6,8&wid=400&hei=300",
     stats: { views: 890, purchases: 185, cartAdds: 290 },
   },
   {
@@ -249,7 +265,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["jacket", "patagonia", "down", "outdoor", "winter"],
     brand: "Patagonia",
     stock: 35,
-    thumbnail: "https://picsum.photos/seed/jacket/400/300",
+    thumbnail:
+      "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw8e7e4b7e/images/hi-res/84674_SMDB.jpg?sw=400&sh=300&sm=fit",
     stats: { views: 640, purchases: 88, cartAdds: 145 },
   },
   {
@@ -263,7 +280,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["hoodie", "champion", "casual", "fleece", "streetwear"],
     brand: "Champion",
     stock: 90,
-    thumbnail: "https://picsum.photos/seed/hoodie/400/300",
+    thumbnail:
+      "https://www.championusa.com/dw/image/v2/BBFH_PRD/on/demandware.static/-/Sites-champion-catalog/default/dw7e5fce4a/images/S0889/S0889-S49/S0889-S49-PrimaryFront.jpg?sw=400&sh=300",
     stats: { views: 720, purchases: 195, cartAdds: 310 },
   },
   {
@@ -275,7 +293,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["jacket", "uniqlo", "down", "packable", "lightweight", "travel"],
     brand: "Uniqlo",
     stock: 75,
-    thumbnail: "https://picsum.photos/seed/uniqlodown/400/300",
+    thumbnail:
+      "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/456902/item/usgoods_09_456902.jpg?width=400",
     stats: { views: 980, purchases: 265, cartAdds: 410 },
   },
   {
@@ -287,7 +306,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["shoes", "new-balance", "sneakers", "made-in-usa", "premium"],
     brand: "New Balance",
     stock: 40,
-    thumbnail: "https://picsum.photos/seed/nb990/400/300",
+    thumbnail:
+      "https://nb.scene7.com/is/image/NB/m990gl6_nb_02_i?$pdpflexf2$&qlt=70&fmt=webp&wid=400&hei=300",
     stats: { views: 860, purchases: 145, cartAdds: 240 },
   },
   // Books
@@ -301,7 +321,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Penguin",
     stock: 200,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/atomichabits/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL._AC_UL400_.jpg",
     stats: { views: 3200, purchases: 890, cartAdds: 1100 },
   },
   {
@@ -313,7 +334,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["programming", "software", "technical", "career", "development"],
     brand: "Addison-Wesley",
     stock: 150,
-    thumbnail: "https://picsum.photos/seed/pragprog/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/71f743sOPoL._AC_UL400_.jpg",
     stats: { views: 1800, purchases: 420, cartAdds: 600 },
   },
   {
@@ -325,7 +347,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["sci-fi", "fiction", "classic", "dune", "frank-herbert"],
     brand: "Ace Books",
     stock: 180,
-    thumbnail: "https://picsum.photos/seed/dune/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/81TmnPZWb0L._AC_UL400_.jpg",
     stats: { views: 2100, purchases: 650, cartAdds: 820 },
   },
   {
@@ -337,7 +360,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["finance", "money", "investing", "psychology", "bestseller"],
     brand: "Harriman House",
     stock: 220,
-    thumbnail: "https://picsum.photos/seed/psychmoney/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL._AC_UL400_.jpg",
     stats: { views: 2450, purchases: 710, cartAdds: 930 },
   },
   {
@@ -349,7 +373,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["programming", "clean-code", "software", "java", "best-practices"],
     brand: "Prentice Hall",
     stock: 130,
-    thumbnail: "https://picsum.photos/seed/cleancode/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/41xShlnTZTL._AC_UL400_.jpg",
     stats: { views: 1560, purchases: 380, cartAdds: 520 },
   },
   {
@@ -361,7 +386,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["productivity", "focus", "self-help", "career", "cal-newport"],
     brand: "Grand Central",
     stock: 175,
-    thumbnail: "https://picsum.photos/seed/deepwork/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/517ggO2GqbL._AC_UL400_.jpg",
     stats: { views: 1890, purchases: 560, cartAdds: 740 },
   },
   {
@@ -373,7 +399,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["startup", "business", "entrepreneurship", "agile", "innovation"],
     brand: "Crown Business",
     stock: 160,
-    thumbnail: "https://picsum.photos/seed/leanstartup/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L._AC_UL400_.jpg",
     stats: { views: 1340, purchases: 420, cartAdds: 580 },
   },
   // Home & Kitchen
@@ -393,7 +420,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Instant Pot",
     stock: 75,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/instantpot/400/300",
+    thumbnail:
+      "https://images-na.ssl-images-amazon.com/images/I/71WtwEvYDOS._AC_UL400_.jpg",
     stats: { views: 1680, purchases: 445, cartAdds: 620 },
   },
   {
@@ -407,7 +435,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["vacuum", "dyson", "cordless", "cleaning", "laser"],
     brand: "Dyson",
     stock: 25,
-    thumbnail: "https://picsum.photos/seed/dyson/400/300",
+    thumbnail:
+      "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/394702-01.png?$responsive$&cropPathE=desktop&fit=stretch,1&wid=400",
     stats: { views: 920, purchases: 120, cartAdds: 190 },
   },
   {
@@ -419,7 +448,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["shelf", "ikea", "storage", "furniture", "minimalist"],
     brand: "IKEA",
     stock: 40,
-    thumbnail: "https://picsum.photos/seed/kallax/400/300",
+    thumbnail:
+      "https://www.ikea.com/us/en/images/products/kallax-shelf-unit-white__0644757_pe702939_s5.jpg?f=xl",
     stats: { views: 540, purchases: 95, cartAdds: 148 },
   },
   {
@@ -433,7 +463,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["blender", "vitamix", "kitchen", "smoothie", "professional"],
     brand: "Vitamix",
     stock: 30,
-    thumbnail: "https://picsum.photos/seed/vitamix/400/300",
+    thumbnail:
+      "https://www.vitamix.com/content/dam/vitamix/product-assets/machines/5200/blenders/5200-black-gallery-1.jpg",
     stats: { views: 870, purchases: 135, cartAdds: 240 },
   },
   {
@@ -445,7 +476,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["dutch-oven", "le-creuset", "cast-iron", "cooking", "premium"],
     brand: "Le Creuset",
     stock: 20,
-    thumbnail: "https://picsum.photos/seed/lecreuset/400/300",
+    thumbnail:
+      "https://www.lecreuset.com/dw/image/v2/BBNT_PRD/on/demandware.static/-/Sites-lecreuset-master/default/dw3e4b5c6d/images/hi-res/LS2501-2667.jpg?sw=400&sh=300",
     stats: { views: 760, purchases: 88, cartAdds: 165 },
   },
   {
@@ -459,7 +491,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["coffee", "nespresso", "espresso", "machine", "kitchen"],
     brand: "Nespresso",
     stock: 45,
-    thumbnail: "https://picsum.photos/seed/nespresso/400/300",
+    thumbnail:
+      "https://www.nespresso.com/ecom/medias/sys_master/public/10416993804318/coffee-machine-vertuo-next-black.jpg",
     stats: { views: 1340, purchases: 310, cartAdds: 490 },
   },
   // Sports
@@ -473,7 +506,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Peloton",
     stock: 10,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/peloton/400/300",
+    thumbnail:
+      "https://images.ctfassets.net/6jnflt57iyzx/3iVBF0Z0ABGP3jYZGodNBO/a6d4494e8f8f7b4c3e0a4f5d1e2b3c4d/bike-plus-pdp-hero.jpg",
     stats: { views: 1100, purchases: 28, cartAdds: 65 },
   },
   {
@@ -485,7 +519,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["water-bottle", "hydro-flask", "hydration", "outdoor", "insulated"],
     brand: "Hydro Flask",
     stock: 120,
-    thumbnail: "https://picsum.photos/seed/hydroflask/400/300",
+    thumbnail:
+      "https://www.hydroflask.com/media/catalog/product/cache/7/image/400x300/9df78eab33525d08d6e5fb8d27136e95/W/32/W32BTS.jpg",
     stats: { views: 760, purchases: 310, cartAdds: 490 },
   },
   {
@@ -497,7 +532,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["yoga", "mat", "fitness", "exercise", "non-slip"],
     brand: "Manduka",
     stock: 90,
-    thumbnail: "https://picsum.photos/seed/yogamat/400/300",
+    thumbnail:
+      "https://www.manduka.com/cdn/shop/products/PRO-Yoga-Mat-6mm-Black-800x800.jpg?v=1680721097&width=400",
     stats: { views: 580, purchases: 195, cartAdds: 280 },
   },
   {
@@ -509,7 +545,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["watch", "garmin", "gps", "running", "fitness-tracker"],
     brand: "Garmin",
     stock: 28,
-    thumbnail: "https://picsum.photos/seed/garmin/400/300",
+    thumbnail:
+      "https://res.garmin.com/transform/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_300,q_auto,w_400/c_pad,h_300,w_400/v1/Product_Images/en/products/010-02810-10/v/cf-lg-010-02810-10",
     stats: { views: 1120, purchases: 145, cartAdds: 260 },
   },
   {
@@ -523,7 +560,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["dumbbells", "bowflex", "weights", "home-gym", "adjustable"],
     brand: "Bowflex",
     stock: 18,
-    thumbnail: "https://picsum.photos/seed/bowflex/400/300",
+    thumbnail:
+      "https://www.bowflex.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-nautilus-master/default/dw5e6f7a8b/images/products/dumbbells/selecttech-552/selecttech-552-pair.jpg?sw=400&sh=300",
     stats: { views: 940, purchases: 112, cartAdds: 210 },
   },
   {
@@ -535,7 +573,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["massage-gun", "theragun", "recovery", "muscle", "fitness"],
     brand: "Theragun",
     stock: 35,
-    thumbnail: "https://picsum.photos/seed/theragun/400/300",
+    thumbnail:
+      "https://www.therabody.com/dw/image/v2/AAMS_PRD/on/demandware.static/-/Sites-therabody-master/default/dw1a2b3c4d/images/hi-res/theragun-prime-black-angle.jpg?sw=400&sh=300",
     stats: { views: 870, purchases: 165, cartAdds: 290 },
   },
   // Beauty
@@ -548,7 +587,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["skincare", "moisturizer", "la-mer", "luxury", "anti-aging"],
     brand: "La Mer",
     stock: 30,
-    thumbnail: "https://picsum.photos/seed/lamer/400/300",
+    thumbnail:
+      "https://www.cremedelamer.com/media/export/cms/products/1000x1000/lm_sku_XC71010_1000x1000_0.jpg",
     stats: { views: 840, purchases: 65, cartAdds: 120 },
   },
   {
@@ -561,7 +601,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Dyson",
     stock: 18,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/airwrap/400/300",
+    thumbnail:
+      "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/400116-01.png?$responsive$&cropPathE=desktop&fit=stretch,1&wid=400",
     stats: { views: 1920, purchases: 142, cartAdds: 310 },
   },
   {
@@ -573,7 +614,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["lipstick", "charlotte-tilbury", "makeup", "nude", "cult-product"],
     brand: "Charlotte Tilbury",
     stock: 80,
-    thumbnail: "https://picsum.photos/seed/lipstick/400/300",
+    thumbnail:
+      "https://www.charlottetilbury.com/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/K/L/KL-LIPSTICK-PILLOWTALK-NEWFORMULA-C-MIN.png",
     stats: { views: 1560, purchases: 430, cartAdds: 680 },
   },
   {
@@ -585,7 +627,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["skincare", "niacinamide", "serum", "blemish", "the-ordinary"],
     brand: "The Ordinary",
     stock: 200,
-    thumbnail: "https://picsum.photos/seed/theordinary/400/300",
+    thumbnail:
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw8a9b0c1d/Images/Products/The-Ordinary/TORONIAC100/TORONIAC100-1.jpg?sw=400&sh=300",
     stats: { views: 3400, purchases: 1200, cartAdds: 1800 },
   },
   {
@@ -597,7 +640,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["hair-care", "olaplex", "treatment", "repair", "bond-building"],
     brand: "Olaplex",
     stock: 110,
-    thumbnail: "https://picsum.photos/seed/olaplex/400/300",
+    thumbnail:
+      "https://www.olaplex.com/cdn/shop/products/No3HairPerfector_100mL_Ecomm_Front_1200x.jpg?v=1680000000&width=400",
     stats: { views: 1890, purchases: 540, cartAdds: 820 },
   },
   {
@@ -609,7 +653,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["concealer", "nars", "makeup", "coverage", "longwear"],
     brand: "NARS",
     stock: 90,
-    thumbnail: "https://picsum.photos/seed/narsconceal/400/300",
+    thumbnail:
+      "https://www.narscosmetics.com/dw/image/v2/AAMT_PRD/on/demandware.static/-/Sites-narscosmetics-master/default/dw1a2b3c4d/2022/concealer/radiant-creamy-concealer/NARS_RadiantCreamyConcealer_Custard_Front.jpg?sw=400&sh=300",
     stats: { views: 1340, purchases: 380, cartAdds: 560 },
   },
   // Toys & Gaming
@@ -624,7 +669,7 @@ const SAMPLE_PRODUCTS = [
     stock: 12,
     isFeatured: true,
     thumbnail:
-      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.Zczg1gW4wdrmXCan5I7vugHaE8%3Fpid%3DApi&f=1&ipt=1c9279ccfad2ebaedb7057da8cdcf0b434373014276ea34c112482181ad7fcfc&ipo=images",
+      "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
     stats: { views: 4200, purchases: 98, cartAdds: 320 },
   },
   {
@@ -637,7 +682,8 @@ const SAMPLE_PRODUCTS = [
     brand: "Nintendo",
     stock: 25,
     isFeatured: true,
-    thumbnail: "https://picsum.photos/seed/switcholed/400/300",
+    thumbnail:
+      "https://assets.nintendo.com/image/upload/c_fill,w_400/q_auto:best/f_auto/dpr_2.0/ncom/en_US/switch/site-design-update/hardware/switch/nintendo-switch-oled-model-white-set/gallery/image01",
     stats: { views: 2890, purchases: 210, cartAdds: 480 },
   },
   {
@@ -651,7 +697,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["lego", "technic", "bugatti", "building", "collectible"],
     brand: "LEGO",
     stock: 8,
-    thumbnail: "https://picsum.photos/seed/legobugatti/400/300",
+    thumbnail:
+      "https://www.lego.com/cdn/cs/set/assets/blt4b36b5ea5db5ca10/42083.jpg?fit=bounds&format=jpg&quality=80&width=400&height=300",
     stats: { views: 1560, purchases: 45, cartAdds: 185 },
   },
   {
@@ -663,7 +710,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["gaming-mouse", "razer", "wireless", "esports", "lightweight"],
     brand: "Razer",
     stock: 45,
-    thumbnail: "https://picsum.photos/seed/razermouse/400/300",
+    thumbnail:
+      "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/hd2/hd3/9343697084446/razer-deathadder-v3-pro-black-500x500.jpg",
     stats: { views: 1120, purchases: 210, cartAdds: 380 },
   },
   // Food & Supplements
@@ -678,7 +726,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["protein", "whey", "gym", "muscle", "nutrition", "supplement"],
     brand: "Optimum Nutrition",
     stock: 90,
-    thumbnail: "https://picsum.photos/seed/wheyprotein/400/300",
+    thumbnail:
+      "https://www.optimumnutrition.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-on-master/default/dw0a1b2c3d/images/hi-res/Gold-Standard-100-Whey-Double-Rich-Chocolate-2lb.jpg?sw=400&sh=300",
     stats: { views: 2100, purchases: 680, cartAdds: 950 },
   },
   {
@@ -690,7 +739,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["greens", "vitamins", "health", "nutrition", "supplement"],
     brand: "Athletic Greens",
     stock: 60,
-    thumbnail: "https://picsum.photos/seed/ag1/400/300",
+    thumbnail:
+      "https://drinkag1.com/wp-content/uploads/2023/09/ag1-canister-400x300.jpg",
     stats: { views: 1340, purchases: 310, cartAdds: 520 },
   },
   {
@@ -702,7 +752,8 @@ const SAMPLE_PRODUCTS = [
     tags: ["coffee", "bulletproof", "ground", "medium-roast", "clean"],
     brand: "Bulletproof",
     stock: 150,
-    thumbnail: "https://picsum.photos/seed/bulletproof/400/300",
+    thumbnail:
+      "https://www.bulletproof.com/dw/image/v2/BBWS_PRD/on/demandware.static/-/Sites-bulletproof-master/default/dw3c4d5e6f/images/hi-res/BP-Coffee-Ground-12oz.jpg?sw=400&sh=300",
     stats: { views: 890, purchases: 320, cartAdds: 490 },
   },
 ];
