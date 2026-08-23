@@ -36,7 +36,7 @@ python --version  # should print Python 3.9 or higher
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/nexusshop.git
+git clone https://github.com/l0keshkum4r/nexusshop.git
 cd nexusshop
 ```
 
